@@ -1,11 +1,28 @@
 <?php
-function calcula($a,$b){
-	
-echo "Suma: " .$a."+".$b."= ".($a+$b). '</br>';
-echo "Resta: " .$a."-".$b."= ".($a-$b). '</br>';
-echo "División: " .$a."/".$b."= ".($a/$b). '</br>';
-echo "Multiplicación: " .$a."x".$b."= ".($a*$b). '</br>';
 
+$a=50;
+$b=25;
+function calcula($a,$b){
+echo("Suma de $a y $b= ");
+echo($a+$b);
+echo'<br/>';
+echo'<br/>';
+
+echo("Resta de $a y $b= ");
+echo($a-$b);
+echo'<br/>';
+echo'<br/>';
+
+echo("Cociente de $a y $b= ");
+echo($a/$b);
+echo'<br/>';
+echo'<br/>';
+
+echo("Producto de $a y $b= ");
+echo($a*$b);
+echo'<br/>';
+echo'<br/>';
 }calcula(50,25);
-calcula(480,10);
+calcula(280,20);
+
 ?>
