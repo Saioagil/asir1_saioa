@@ -25,14 +25,18 @@ echo '<br>';
 }
 
 
-function triangulo($a,$b,$c,$d,$e,$f){
-	longitud($a,$b,$c);
-	angulos($a,$e,$f);
+function triangulo($a){
+	
+	longitud($a['lados'][0],$a[1],$a[2]);
+	angulos($a['angulos'][0],$a[1],$a[2]);
 }
 
-triangulo(1,1,1,60,60,90);
-echo'<br>';
+
+triangulo(
+	[
+		'lados'[1,1,1];
+		'angulos'[60,60,60];
+	]
+);
 triangulo(1,2,3,75,45,60);
-echo'<br>';
-triangulo(1,1,2,190,85,95);
 ?>
