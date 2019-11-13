@@ -14,7 +14,15 @@ echo longitud(1,2,3);
 echo '<br>';
 echo longitud(2,2,2);
 echo '<br>';
-echo longitud(1,1,4);
+echo longitud(1,1,2);
+echo '<br>';
+echo longitud(1,2,1);
+echo '<br>';
+echo longitud(3,3,3);
+echo '<br>';
+echo longitud(1,2,2);
+echo '<br>';
+echo longitud(1,3,2);
 echo '<br>';
 
 ?>
