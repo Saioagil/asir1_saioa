@@ -9,8 +9,8 @@ function longitud($a,$b,$c){
 	if($a==$b and $b==$c)
 		$r="Equilatero";
 	
-echo $r;
-echo '<br>';
+return $r;
+
 }
 
 function angulos($a,$b,$c){
@@ -20,10 +20,9 @@ function angulos($a,$b,$c){
 		$r="Rectángulo";
 	if($a<90 and $b<90 and $c<90)
 		$r="Acutángulo";
-echo $r;
-echo '<br>';
-}
+return $r;
 
+}
 
 function triangulo($a){
 	
@@ -31,12 +30,9 @@ function triangulo($a){
 	angulos($a['angulos'][0],$a[1],$a[2]);
 }
 
-
 triangulo(
-	[
-		'lados'[1,1,1];
-		'angulos'[60,60,60];
-	]
-);
-triangulo(1,2,3,75,45,60);
+		['lados'[1,1,1];
+		'angulos'[60,60,60];]
+	return $r;
+echo triangulo(1,2,3,75,45,60);
 ?>

@@ -7,12 +7,14 @@ function longitud($a,$b,$c){
 		$r="Isósceles";
 	if($a==$b and $b==$c)
 		$r="Equilatero";
-	
-echo $r;
+
+return $r;}
+
+echo longitud(1,2,3);
 echo '<br>';
-}
-longitud(1,2,3);
-longitud(2,2,2);
-longitud(1,1,4);
+echo longitud(2,2,2);
+echo '<br>';
+echo longitud(1,1,4);
+echo '<br>';
 
 ?>

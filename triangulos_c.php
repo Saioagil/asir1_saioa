@@ -1,6 +1,5 @@
 <?php
 
-
 function longitud($a,$b,$c){
 	
 	$r="Escaleno";
@@ -10,7 +9,7 @@ function longitud($a,$b,$c){
 		$r="Equilatero";
 	
 echo $r;
-echo '<br>';
+echo'<br>';
 }
 
 function angulos($a,$b,$c){
@@ -20,14 +19,14 @@ function angulos($a,$b,$c){
 		$r="Rectángulo";
 	if($a<90 and $b<90 and $c<90)
 		$r="Acutángulo";
+	
 echo $r;
-echo '<br>';
+echo'<br>';
 }
-
 
 function triangulo($a,$b,$c,$d,$e,$f){
 	longitud($a,$b,$c);
-	angulos($a,$e,$f);
+	angulos($d,$e,$f);
 }
 
 triangulo(1,1,1,60,60,90);

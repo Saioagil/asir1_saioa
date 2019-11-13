@@ -8,11 +8,14 @@ $r="Obstusángulo";
 	
 	if($a<90 and $b<90 and $c<90)
 		$r="Acutángulo";
-echo $r;
-echo '<br>';
+		
+return $r;
 }
-angulos(90,50,190);
-angulos(45,45,190);
-angulos(30,30,30);
+echo angulos(90,50,190);
+echo '<br>';
+echo angulos(45,45,190);
+echo '<br>';
+echo angulos(30,30,30);
+echo '<br>';
 ?>
 	
