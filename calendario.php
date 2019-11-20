@@ -3,19 +3,19 @@ function mes($n){
 	$a=[
 	['Mes'=>'Enero',
 	'Días'=>'31',
-	'Estacion'=>'Verano'],
+	'Estacion'=>'Invierno'],
 	['Mes'=>'Febrero',
 	'Días'=>'28 ò 29',
-	'Estacion'=>'Verano'],
+	'Estacion'=>'Invierno'],
 	['Mes'=>'Marzo',
 	'Dias'=>'31',
 	'Estacion'=>'Primavera'],
 	['Mes'=>'Abril',
 	'Días'=>'30',
-	'Estacion'=>'Otoño'],
+	'Estacion'=>'Primavera'],
 	['Mes'=>'Mayo',
 	'Días'=>'31',
-	'Estacion'=>'Otoño'],
+	'Estacion'=>'Primavera'],
 	['Mes'=>'Junio',
 	'Días'=>'30',
 	'Estacion'=>'Verano'],
@@ -27,13 +27,13 @@ function mes($n){
 	'Estacion'=>'Verano'],
 	['Mes'=>'Septiembre',
 	'Días'=>'30',
-	'Estacion'=>'Verano'],
+	'Estacion'=>'Otoño'],
 	['Mes'=>'Octubre',
 	'Días'=>'31',
-	'Estacion'=>'Invierno'],
+	'Estacion'=>'Otoño'],
 	['Mes'=>'Noviembre',
 	'Días'=>'30',
-	'Estacion'=>'Invierno'],
+	'Estacion'=>'Otoño'],
 	['Mes'=>'Diciembre',
 	'Días'=>'31',
 	'Estacion'=>'Invierno']
@@ -46,7 +46,13 @@ function mes($n){
 	return $r;
 	
 } 
-echo mes (11).'<br>';
-echo mes (1).'<br>';
-echo mes (5).'<br>';
+echo 'Noviembre tiene 30 dias y la estación es Otoño','<br>';
+echo mes (11),'<br>';
+echo 'Enero tiene 31 dias y la estacion es Invierno','<br>';
+echo mes (1),'<br>';
+echo 'Mayo tiene 31 dias y la estacion es Primavera','<br>';
+echo mes (5),'<br>';
+echo 'Julio tiene 31 dias y la estacion es Verano','<br>';
+echo mes (7),'<br>';
+
 ?>
