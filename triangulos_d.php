@@ -1,6 +1,5 @@
 <?php
 
-
 function longitud($a,$b,$c){
 	
 	$r="Escaleno";
@@ -10,7 +9,6 @@ function longitud($a,$b,$c){
 		$r="Equilatero";
 	
 return $r;
-
 }
 
 function angulos($a,$b,$c){
@@ -31,8 +29,9 @@ function triangulo($a){
 }
 
 triangulo(
-		['lados'[1,1,1];
+		['lados'[1,1,1],
 		'angulos'[60,60,60];]
+		
 	return $r;
 echo triangulo(1,2,3,75,45,60);
 ?>

@@ -31,7 +31,7 @@ foreach($r as $f){
 	echo '<td>';
 	echo $f['fecha'];
 	echo '</td>';	
-	//día de semana
+	//día semana
 	echo '<td>';
 	echo $f['D'];
 	echo '</td>';	
