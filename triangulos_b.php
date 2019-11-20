@@ -11,11 +11,14 @@ $r="Obstusángulo";
 		
 return $r;
 }
-echo angulos(90,50,190);
+echo 'El triangulo va  a ser Rectangulo;','<br>';
+echo angulos(90,50,190),'<br>';
 echo '<br>';
-echo angulos(45,45,190);
+echo 'El triangulo va a ser Obtusangulo;','<br>';
+echo angulos(45,45,190),'<br>';
 echo '<br>';
-echo angulos(30,30,30);
+echo 'El triangulo va a ser Acutangulo;','<br>';
+echo angulos(30,30,30),'<br>';
 echo '<br>';
 ?>
 	

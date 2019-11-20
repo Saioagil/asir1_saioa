@@ -28,10 +28,12 @@ function triangulo($a,$b,$c,$d,$e,$f){
 	longitud($a,$b,$c);
 	angulos($d,$e,$f);
 }
-
+echo 'El triangulo va a ser Equilatero y Rectángulo;','<br>';
 triangulo(1,1,1,60,60,90);
 echo'<br>';
+echo 'El triangulo va a ser Escaleno y Acutángulo;','<br>';
 triangulo(1,2,3,75,45,60);
 echo'<br>';
+echo 'El triangulo va a ser Isosceles y Obtusangulo','<br>';
 triangulo(1,1,2,190,85,95);
 ?>
