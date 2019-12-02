@@ -1,47 +1,39 @@
 <?php
-function longitud ($a,$b,$c) {
-	$r="Escaleno";
-	if ($a==$b || $a==$c || $b==$c)
-		$r="Isosceles";
-	if ($b==$c and $a==$c)
-		$r="Equilatero";
+function angulo ($a, $b, $c) {
+			$r="Acutangulo";
+			if ($a==90 or $b==90 or $c==90) 
+				$r="Rectangulo";
+			if ($a>90 or $b>90 or $c>90)
+				$r="Obtusangulo";
 	return $r;
 }
-function angulo ($d,$e,$f) {
-	$r="Acutangulo";
-	if ($d==90 or $e==90 or $f==90)
-		$r="Rectangulo";
-	if ($d>90 or $e>90 or $f>90)
-		$r="Obtusangulo";
-	return $r;
+function longitud ($d, $e, $f){
+			$r="Escaleno";
+			if ($d==$e || $e==$f){
+				$r="Isosceles";
+			if ($e==$f and $d==$f)
+				$r="Equilatero";
+			}
+			return $r;
 }
 function triangulos($l){
+	list($a,$b,$c)=$l;
 	
-		list($d,$e,$f)=$l;
-		$x=($d**2-$e**2+$f**2)/(2*$f);
-		$h=sqrt($d**2-$x**2);
-		$A=atan($h/($f-$x))*360/(2*pi());
-		$B=atan($h/($f-$x))*360/(2*pi());
-		$C=180-$A-$B;
-	
-		$r=[
-			'angulos'=>[$d,$e,$f],
-			'tipo_lados'=>longitud($d,$e,$f),
-			'tipo_angulos'=>Angulo($d,$e,$f),
-		];
+$x=($a**2-$b**2+$c**2)/(2*$c);
+$h=sqrt($a**2-$x**2);
+$A=atan($h/($c-$x))*360/(2*pi());
+$B=atan($h/($c-$x))*360/(2*pi());
+$C=180-$A-$B;
+$r=[
+			'angulos'=>[$A,$B,$C],
+			'tipo_lados'=>longitud($a,$b,$c),
+			'tipo_angulos'=>angulo($a,$b,$c),
+	];
 	
 	return $r;
 }
 
-function prueba($t){
-	$r=triangulos($t);
+$r=triangulos([1,1,sqrt(3)]);
 	echo '<pre>';
-	print_r($t);
 	print_r($r);
-	echo '</pre>';
-}
-echo '<h1>Isósceles-Rectángulo</h1>';
-echo prueba([1,1,sqrt(2)]);
-echo '<h1>Equilátero-Acutángulo</h1>';prueba([1,1,1]);
-echo '<h1>Isósceles-Acutángulo</h1>';prueba([2,2,2.5]);
-
+	echo '<pre>';
