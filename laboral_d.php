@@ -72,7 +72,7 @@ for($i=1;$i<289;$i++){
 		'fecha'=>date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60),
 		'D'=>date('D',strtotime('2019-09-11')+($i-1)*24*60*60),
 		];
-		if(	// LMS: lunes y miércoles (2h)
+		if(	// LMS: lunes y miércoles
 			date('D',strtotime($d))=='Mon' or
 			date('D',strtotime($d))=='Wed'
 			) $r['LMS'][]=['fecha'=>date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60)];
